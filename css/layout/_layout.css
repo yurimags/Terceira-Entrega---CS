@@ -1,0 +1,152 @@
+/* ============================================
+   LAYOUT GERAL COM CSS GRID
+   ============================================ */
+
+/* Estrutura principal do site */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+    grid-row: 1;
+}
+
+/* Main */
+main {
+    grid-row: 2;
+    min-height: calc(100vh - 200px);
+}
+
+/* Footer */
+.main-footer {
+    grid-row: 3;
+}
+
+/* Seções com Grid */
+section {
+    padding: var(--spacing-2xl) 0;
+}
+
+section header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* Container responsivo */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+}
+
+/* Layouts específicos com Grid */
+.about-content,
+.projects-grid,
+.team-grid,
+.contact-info,
+.impact-stats,
+.donation-methods {
+    display: grid;
+    gap: var(--spacing-xl);
+}
+
+.about-content {
+    grid-template-columns: 1fr;
+}
+
+.projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.contact-info {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.impact-stats {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.donation-methods {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Leiautes de página */
+.page-header {
+    background-color: var(--color-bg-light);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.hero {
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    text-align: center;
+}
+
+/* Utilities de layout */
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.gap-sm {
+    gap: var(--spacing-sm);
+}
+
+.gap-md {
+    gap: var(--spacing-md);
+}
+
+.gap-lg {
+    gap: var(--spacing-lg);
+}
+
+.gap-xl {
+    gap: var(--spacing-xl);
+}
+
+
+

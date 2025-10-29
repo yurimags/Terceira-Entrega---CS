@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="eduGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#eduGrad)"/>
+  <rect x="120" y="60" width="160" height="100" rx="5" fill="white" opacity="0.9"/>
+  <rect x="130" y="70" width="25" height="20" rx="2" fill="#2c5aa0"/>
+  <rect x="165" y="70" width="25" height="20" rx="2" fill="#2c5aa0"/>
+  <rect x="200" y="70" width="25" height="20" rx="2" fill="#2c5aa0"/>
+  <rect x="235" y="70" width="25" height="20" rx="2" fill="#2c5aa0"/>
+  <rect x="270" y="70" width="10" height="80" rx="5" fill="#2c5aa0"/>
+  <circle cx="145" cy="135" r="8" fill="#2c5aa0"/>
+  <circle cx="175" cy="135" r="8" fill="#2c5aa0"/>
+  <circle cx="205" cy="135" r="8" fill="#2c5aa0"/>
+  <circle cx="235" cy="135" r="8" fill="#2c5aa0"/>
+  <text x="200" y="190" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Educação</text>
+  <text x="200" y="215" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" opacity="0.9">para o Futuro</text>
+</svg>

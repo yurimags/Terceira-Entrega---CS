@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="60" viewBox="0 0 150 60">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fundo com bordas arredondadas -->
+  <rect width="150" height="60" fill="url(#logoGrad)" rx="10"/>
+  
+  <!-- Ícone de pessoas conectadas -->
+  <circle cx="25" cy="22" r="8" fill="white"/>
+  <circle cx="40" cy="22" r="8" fill="white"/>
+  <path d="M 25 30 Q 32.5 35 40 30" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Coração simbolizando solidariedade -->
+  <path d="M 25 38 Q 25 35 30 35 Q 32.5 35 32.5 38 Q 32.5 42 25 45 Q 17.5 42 17.5 38 Q 17.5 35 20 35 Q 25 35 25 38 Z" fill="white"/>
+  
+  <!-- Texto da logo -->
+  <text x="52" y="20" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="white" letter-spacing="0.5px">PLATAFORMA</text>
+  <text x="52" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="white" letter-spacing="1px">ONG</text>
+  <text x="52" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="white" opacity="0.8">Impacto Social</text>
+</svg>
+

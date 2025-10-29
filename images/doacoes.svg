@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <defs>
+    <linearGradient id="doaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5aa0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="300" fill="url(#doaGrad)"/>
+  <circle cx="250" cy="100" r="50" fill="white" opacity="0.9"/>
+  <path d="M 220 90 L 230 110 L 250 95 L 270 110 L 280 90" stroke="#28a745" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 230 110 L 250 130 L 270 110" stroke="#28a745" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <rect x="180" y="160" width="140" height="40" rx="5" fill="white" opacity="0.9"/>
+  <text x="250" y="185" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#28a745" text-anchor="middle">R$ 100,00</text>
+  <text x="250" y="240" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">Doações</text>
+  <text x="250" y="270" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" opacity="0.9">Transforme vidas</text>
+</svg>

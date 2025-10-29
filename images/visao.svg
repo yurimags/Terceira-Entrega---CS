@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="visaoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#28a745;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#visaoGrad)"/>
+  <circle cx="200" cy="100" r="45" fill="none" stroke="white" stroke-width="3"/>
+  <circle cx="180" cy="90" r="8" fill="white"/>
+  <circle cx="220" cy="90" r="8" fill="white"/>
+  <path d="M 170 120 Q 200 130 230 120" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Nossa Visão</text>
+  <text x="200" y="185" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.9">Ser referência em impacto social</text>
+</svg>

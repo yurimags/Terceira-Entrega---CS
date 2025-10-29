@@ -1,0 +1,165 @@
+/* ============================================
+   SISTEMA DE BADGES E TAGS
+   ============================================ */
+
+.badge,
+.tag {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--border-radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Badges */
+.badge {
+    position: relative;
+    padding: 0.25em 0.6em;
+}
+
+/* Variantes de Badge */
+.badge-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+}
+
+.badge-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text-inverse);
+}
+
+.badge-success {
+    background-color: var(--color-success);
+    color: var(--color-text-inverse);
+}
+
+.badge-error {
+    background-color: var(--color-error);
+    color: var(--color-text-inverse);
+}
+
+.badge-warning {
+    background-color: var(--color-warning);
+    color: var(--color-text-primary);
+}
+
+.badge-info {
+    background-color: var(--color-info);
+    color: var(--color-text-inverse);
+}
+
+.badge-outline {
+    background-color: transparent;
+    border: 2px solid currentColor;
+}
+
+.badge-outline.badge-primary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.badge-outline.badge-secondary {
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.badge-outline.badge-success {
+    color: var(--color-success);
+    border-color: var(--color-success);
+}
+
+/* Tags */
+.tag {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: var(--font-weight-normal);
+}
+
+.tag-primary {
+    background-color: var(--color-primary-light);
+    color: var(--color-text-inverse);
+    border-color: var(--color-primary);
+}
+
+.tag-secondary {
+    background-color: var(--color-secondary-light);
+    color: var(--color-text-inverse);
+    border-color: var(--color-secondary);
+}
+
+.tag-success {
+    background-color: var(--color-success-light);
+    color: var(--color-success-dark);
+    border-color: var(--color-success);
+}
+
+.tag-error {
+    background-color: var(--color-error-light);
+    color: var(--color-error-dark);
+    border-color: var(--color-error);
+}
+
+.tag-warning {
+    background-color: var(--color-warning-light);
+    color: var(--color-warning-dark);
+    border-color: var(--color-warning);
+}
+
+.tag-info {
+    background-color: var(--color-info-light);
+    color: var(--color-info-dark);
+    border-color: var(--color-info);
+}
+
+/* Tamanhos */
+.badge-sm,
+.tag-sm {
+    font-size: 0.65rem;
+    padding: 0.15em 0.4em;
+}
+
+.badge-lg,
+.tag-lg {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+/* Badge em Cards */
+.project-card .badge {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+}
+
+/* Grupo de Tags */
+.tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+/* Remover Tag (com X) */
+.tag-remove {
+    margin-left: var(--spacing-xs);
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity var(--transition-fast);
+}
+
+.tag-remove:hover {
+    opacity: 1;
+}
+
+
+

@@ -1,0 +1,271 @@
+/* ============================================
+   RESPONSIVIDADE COM 5+ BREAKPOINTS
+   ============================================ */
+
+/* Breakpoint 1: Mobile Extra Small (320px+) */
+@media (min-width: 320px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding-left: var(--spacing-sm);
+        padding-right: var(--spacing-sm);
+    }
+
+    .hero h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Breakpoint 2: Mobile Small (576px+) */
+@media (min-width: 576px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+
+    .hero h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Breakpoint 3: Tablet (768px+) */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .main-nav .container {
+        flex-wrap: nowrap;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    .nav-overlay {
+        display: none;
+    }
+
+    .about-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .donation-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .impact-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: var(--spacing-2xl) 0;
+    }
+}
+
+/* Breakpoint 4: Desktop (992px+) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .about-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .donation-methods {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .impact-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .volunteering-content,
+    .donation-content {
+        max-width: 900px;
+    }
+}
+
+/* Breakpoint 5: Desktop Large (1200px+) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .donation-methods {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Breakpoint 6: Desktop Extra Large (1400px+) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    html {
+        font-size: 17px;
+    }
+}
+
+/* Ajustes Mobile First */
+@media (max-width: 575px) {
+    .hero {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    section h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .registration-form {
+        padding: var(--spacing-md);
+    }
+
+    .form-group {
+        padding: var(--spacing-md);
+    }
+
+    .card,
+    .project-card,
+    .team-member {
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    .donation-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-card h3 {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+@media (max-width: 991px) {
+    .main-nav .container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Imagens responsivas */
+@media (max-width: 767px) {
+    .about-content article img,
+    .volunteering-info img,
+    .donation-info img {
+        max-width: 100%;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+
+    .team-member img {
+        max-width: 200px;
+        height: 200px;
+    }
+}
+
+/* Ajustes de tipografia responsiva */
+@media (max-width: 767px) {
+    h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    h4 {
+        font-size: var(--font-size-md);
+    }
+}
+

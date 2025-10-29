@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <defs>
+    <linearGradient id="volGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#28a745;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="300" fill="url(#volGrad)"/>
+  <circle cx="150" cy="120" r="40" fill="white" opacity="0.9"/>
+  <circle cx="250" cy="120" r="40" fill="white" opacity="0.9"/>
+  <circle cx="350" cy="120" r="40" fill="white" opacity="0.9"/>
+  <path d="M 110 120 L 130 100 L 170 140 L 150 160" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 210 120 L 230 100 L 270 140 L 250 160" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 310 120 L 330 100 L 370 140 L 350 160" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <line x1="120" y1="200" x2="380" y2="200" stroke="white" stroke-width="3"/>
+  <text x="250" y="240" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">Voluntariado</text>
+  <text x="250" y="270" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" opacity="0.9">Faça parte da transformação</text>
+</svg>

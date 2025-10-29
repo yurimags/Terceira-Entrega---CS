@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre-se como voluntário ou doador e faça parte da transformação social.">
+    <meta name="keywords" content="cadastro, voluntário, doador, ONG, inscrição">
+    <meta name="author" content="Plataforma ONG">
+    <title>Cadastro - Plataforma ONG</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav" aria-label="Navegação principal">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="Logo da Plataforma ONG" width="150" height="60">
+                </a>
+                <button class="nav-toggle" aria-label="Menu de navegação" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-overlay"></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li>
+                        <a href="projetos.html">Projetos</a>
+                        <ul class="submenu">
+                            <li><a href="projetos.html#educacao">Educação</a></li>
+                            <li><a href="projetos.html#saude">Saúde</a></li>
+                            <li><a href="projetos.html#meio-ambiente">Meio Ambiente</a></li>
+                            <li><a href="projetos.html#alimentacao">Alimentação</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Cadastro</h1>
+                <p>Preencha o formulário abaixo para se cadastrar como voluntário ou doador em nossa plataforma.</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <header>
+                    <h2>Formulário de Cadastro</h2>
+                </header>
+                <form id="registrationForm" class="registration-form" action="#" method="post" novalidate>
+                    <fieldset class="form-group">
+                        <legend>Dados Pessoais</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="nomeCompleto">
+                                    Nome Completo <abbr title="obrigatório">*</abbr>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="nomeCompleto" 
+                                    name="nomeCompleto" 
+                                    required 
+                                    minlength="5" 
+                                    maxlength="100"
+                                    pattern="^[A-Za-zÀ-ÿ\s]{5,100}$"
+                                    title="Digite seu nome completo (mínimo 5 caracteres, apenas letras e espaços)"
+                                    aria-describedby="nomeCompleto-help"
+                                    autocomplete="name">
+                                <small id="nomeCompleto-help" class="form-help">
+                                    Digite seu nome completo sem abreviações
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="email">
+                                    E-mail <abbr title="obrigatório">*</abbr>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    maxlength="100"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    title="Digite um e-mail válido"
+                                    aria-describedby="email-help"
+                                    autocomplete="email">
+                                <small id="email-help" class="form-help">
+                                    Exemplo: seuemail@exemplo.com
+                                </small>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="cpf">
+                                    CPF <abbr title="obrigatório">*</abbr>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="cpf" 
+                                    name="cpf" 
+                                    required 
+                                    maxlength="14"
+                                    pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$"
+                                    title="Digite um CPF válido no formato: 000.000.000-00"
+                                    aria-describedby="cpf-help"
+                                    placeholder="000.000.000-00"
+                                    autocomplete="off">
+                                <small id="cpf-help" class="form-help">
+                                    Formato: 000.000.000-00
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="telefone">
+                                    Telefone <abbr title="obrigatório">*</abbr>
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="telefone" 
+                                    name="telefone" 
+                                    required 
+                                    maxlength="15"
+                                    pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$"
+                                    title="Digite um telefone válido no formato: (00) 00000-0000"
+                                    aria-describedby="telefone-help"
+                                    placeholder="(00) 00000-0000"
+                                    autocomplete="tel">
+                                <small id="telefone-help" class="form-help">
+                                    Formato: (00) 00000-0000 ou (00) 0000-0000
+                                </small>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="dataNascimento">
+                                    Data de Nascimento <abbr title="obrigatório">*</abbr>
+                                </label>
+                                <input 
+                                    type="date" 
+                                    id="dataNascimento" 
+                                    name="dataNascimento" 
+                                    required
+                                    min="1920-01-01"
+                                    max="2010-12-31"
+                                    title="Data de nascimento"
+                                    aria-describedby="dataNascimento-help"
+                                    autocomplete="bday">
+                                <small id="dataNascimento-help" class="form-help">
+                                    Você deve ter no mínimo 16 anos para se cadastrar
+                                </small>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend>Endereço</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="cep">
+                                    CEP <abbr title="obrigatório">*</abbr>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="cep" 
+                                    name="cep" 
+                                    required 
+                                    maxlength="9"
+                                    pattern="^\d{5}-?\d{3}$"
+                                    title="Digite um CEP válido no formato: 00000-000"
+                                    aria-describedby="cep-help"
+                                    placeholder="00000-000"
+                                    autocomplete="postal-code">
+                                <small id="cep-help" class="form-help">
+                                    Formato: 00000-000
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field form-field-large">
+                                <label for="endereco">
+                                    Endereço (Rua, Avenida, Número) <abbr title="obrigatório">*</abbr>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="endereco" 
+                                    name="endereco" 
+                                    required 
+                                    minlength="5" 
+                                    maxlength="200"
+                                    title="Digite o nome da rua/avenida e número"
+                                    aria-describedby="endereco-help"
+                                    autocomplete="off">
+                                <small id="endereco-help" class="form-help">
+                                    Exemplo: Avenida Paulista, 1000
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="cidade">
+                                    Cidade <abbr title="obrigatório">*</abbr>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="cidade" 
+                                    name="cidade" 
+                                    required 
+                                    minlength="3" 
+                                    maxlength="100"
+                                    pattern="^[A-Za-zÀ-ÿ\s]{3,100}$"
+                                    title="Digite o nome da cidade (apenas letras)"
+                                    aria-describedby="cidade-help"
+                                    autocomplete="address-level2">
+                                <small id="cidade-help" class="form-help">
+                                    Digite o nome da sua cidade
+                                </small>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="estado">
+                                    Estado <abbr title="obrigatório">*</abbr>
+                                </label>
+                                <select 
+                                    id="estado" 
+                                    name="estado" 
+                                    required
+                                    title="Selecione seu estado"
+                                    aria-describedby="estado-help"
+                                    autocomplete="address-level1">
+                                    <option value="">Selecione...</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                <small id="estado-help" class="form-help">
+                                    Selecione seu estado
+                                </small>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend>Interesse</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-field">
+                                <p>Como você gostaria de participar? <abbr title="obrigatório">*</abbr></p>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input 
+                                            type="radio" 
+                                            name="tipoParticipacao" 
+                                            value="voluntario" 
+                                            required
+                                            aria-describedby="tipoParticipacao-help">
+                                        <span>Voluntário</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input 
+                                            type="radio" 
+                                            name="tipoParticipacao" 
+                                            value="doador" 
+                                            required
+                                            aria-describedby="tipoParticipacao-help">
+                                        <span>Doador</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input 
+                                            type="radio" 
+                                            name="tipoParticipacao" 
+                                            value="ambos" 
+                                            required
+                                            aria-describedby="tipoParticipacao-help">
+                                        <span>Voluntário e Doador</span>
+                                    </label>
+                                </div>
+                                <small id="tipoParticipacao-help" class="form-help">
+                                    Selecione como deseja participar
+                                </small>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Plataforma ONG. Todos os direitos reservados.</p>
+            <p>Desenvolvido com dedicação para transformar vidas através da tecnologia social.</p>
+        </div>
+    </footer>
+
+    <!-- Módulos JavaScript -->
+    <script src="js/storage.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/form-validator.js"></script>
+    <script src="js/masks.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
