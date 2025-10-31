@@ -1,18 +1,9 @@
-/**
- * Storage.js - Gerenciamento de armazenamento local (localStorage)
- * Facilita o uso do localStorage com tratamento de erros
- */
-
 class StorageManager {
     constructor(prefix = 'platform_ong_') {
         this.prefix = prefix;
         this.isAvailable = this.checkAvailability();
     }
 
-    /**
-     * Verifica se o localStorage está disponível
-     * @returns {boolean} True se disponível
-     */
     checkAvailability() {
         try {
             const test = '__storage_test__';
@@ -25,21 +16,10 @@ class StorageManager {
         }
     }
 
-    /**
-     * Obtém uma chave completa com prefixo
-     * @param {string} key - Chave
-     * @returns {string} Chave completa
-     */
     getKey(key) {
         return this.prefix + key;
     }
 
-    /**
-     * Salva um valor no localStorage
-     * @param {string} key - Chave
-     * @param {any} value - Valor (será convertido para JSON)
-     * @returns {boolean} True se salvou com sucesso
-     */
     set(key, value) {
         if (!this.isAvailable) return false;
 
@@ -53,12 +33,6 @@ class StorageManager {
         }
     }
 
-    /**
-     * Obtém um valor do localStorage
-     * @param {string} key - Chave
-     * @param {any} defaultValue - Valor padrão se não encontrado
-     * @returns {any} Valor obtido ou valor padrão
-     */
     get(key, defaultValue = null) {
         if (!this.isAvailable) return defaultValue;
 
@@ -72,11 +46,6 @@ class StorageManager {
         }
     }
 
-    /**
-     * Remove um item do localStorage
-     * @param {string} key - Chave
-     * @returns {boolean} True se removeu com sucesso
-     */
     remove(key) {
         if (!this.isAvailable) return false;
 
@@ -89,10 +58,6 @@ class StorageManager {
         }
     }
 
-    /**
-     * Limpa todos os itens com o prefixo
-     * @returns {boolean} True se limpou com sucesso
-     */
     clear() {
         if (!this.isAvailable) return false;
 
@@ -110,20 +75,11 @@ class StorageManager {
         }
     }
 
-    /**
-     * Verifica se uma chave existe
-     * @param {string} key - Chave
-     * @returns {boolean} True se existe
-     */
     has(key) {
         if (!this.isAvailable) return false;
         return localStorage.getItem(this.getKey(key)) !== null;
     }
 
-    /**
-     * Obtém todas as chaves com o prefixo
-     * @returns {Array<string>} Array de chaves
-     */
     keys() {
         if (!this.isAvailable) return [];
 
@@ -138,10 +94,8 @@ class StorageManager {
     }
 }
 
-// Instância global do Storage Manager
 const storage = new StorageManager();
 
-// Exportar
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { StorageManager, storage };
 }

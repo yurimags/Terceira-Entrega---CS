@@ -1,6 +1,3 @@
-/* ============================================
-   ALERTS - COMPONENTES DE FEEDBACK
-   ============================================ */
 
 .alert {
     padding: var(--spacing-md) var(--spacing-lg);
@@ -13,7 +10,6 @@
     position: relative;
 }
 
-/* Variantes de Alert */
 .alert-success {
     background-color: var(--color-success-light);
     border-color: var(--color-success);
@@ -44,7 +40,6 @@
     color: var(--color-primary-dark);
 }
 
-/* Ícone no Alert */
 .alert-icon {
     flex-shrink: 0;
     font-size: var(--font-size-lg);
@@ -65,7 +60,6 @@
     font-size: var(--font-size-base);
 }
 
-/* Botão de Fechar */
 .alert-close {
     background: transparent;
     border: none;
@@ -82,12 +76,10 @@
     opacity: 1;
 }
 
-/* Alert Dismissible */
 .alert-dismissible {
     padding-right: calc(var(--spacing-lg) + var(--spacing-xl));
 }
 
-/* Responsividade */
 @media (max-width: 767px) {
     .alert {
         padding: var(--spacing-sm) var(--spacing-md);

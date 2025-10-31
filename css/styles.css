@@ -1,25 +1,11 @@
-/* ============================================
-   CSS MODULAR - ARQUIVO PRINCIPAL
-   Plataforma ONG - Segunda Entrega CS
-   ============================================ */
-
-/* ============================================
-   BASE
-   ============================================ */
 @import url('base/_reset.css');
 @import url('base/_variables.css');
 @import url('base/_typography.css');
 
-/* ============================================
-   LAYOUT
-   ============================================ */
 @import url('layout/_grid-system.css');
 @import url('layout/_layout.css');
 @import url('layout/_responsive.css');
 
-/* ============================================
-   COMPONENTES
-   ============================================ */
 @import url('components/_navigation.css');
 @import url('components/_buttons.css');
 @import url('components/_cards.css');
@@ -29,16 +15,8 @@
 @import url('components/_toasts.css');
 @import url('components/_modals.css');
 
-/* ============================================
-   UTILITÁRIOS
-   ============================================ */
 @import url('utilities/_utilities.css');
 
-/* ============================================
-   ESTILOS ESPECÍFICOS POR SEÇÃO
-   ============================================ */
-
-/* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     color: var(--color-text-inverse);
@@ -56,7 +34,6 @@
     opacity: 0.95;
 }
 
-/* Section Headers */
 section header h2 {
     color: var(--color-primary);
     margin-bottom: var(--spacing-md);
@@ -73,13 +50,11 @@ section h4 {
     margin-bottom: var(--spacing-md);
 }
 
-/* Page Header */
 .page-header h1 {
     color: var(--color-primary);
     margin-bottom: var(--spacing-md);
 }
 
-/* Footer */
 .main-footer {
     background-color: var(--color-neutral-900);
     color: var(--color-text-inverse);
@@ -92,7 +67,6 @@ section h4 {
     margin-bottom: var(--spacing-sm);
 }
 
-/* Contact Links */
 .contact-item a {
     color: var(--color-secondary);
     text-decoration: none;
@@ -104,13 +78,11 @@ section h4 {
     text-decoration: underline;
 }
 
-/* CTA Section */
 .cta-section {
     text-align: center;
     margin: var(--spacing-xl) 0;
 }
 
-/* History Section */
 .history-section article {
     background: var(--color-bg-white);
     padding: var(--spacing-xl);
@@ -131,7 +103,6 @@ section h4 {
     margin-bottom: var(--spacing-md);
 }
 
-/* Lists */
 .volunteering-info ol,
 .volunteering-info ul,
 .donation-info ul,
